@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
             formdata.name = fname.value;
 
             sessionStorage.setItem("formdata", JSON.stringify(formdata));  
-            window.location.href = "http://127.0.0.1:5500/scardgame.html";
+            window.location.href = "scardgame.html";
         } else {
             alert("Please enter your name");
             fname.focus();
