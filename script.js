@@ -24,8 +24,8 @@ document.addEventListener("DOMContentLoaded", function () {
             const formdata = JSON.parse(sessionStorage.getItem("formdata") || "{}");
             formdata.name = fname.value;
 
-            sessionStorage.setItem("formdata", JSON.stringify(formdata));  // ✅ Ensure data is stringified
-            window.location.href = "http://127.0.0.1:5500/cardgame.html";
+            sessionStorage.setItem("formdata", JSON.stringify(formdata));  
+            window.location.href = "http://127.0.0.1:5500/scardgame.html";
         } else {
             alert("Please enter your name");
             fname.focus();
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
             data = JSON.parse(data);
         } catch (error) {
             console.error("Invalid JSON format in sessionStorage:", error);
-            data = {};  // Fallback to an empty object if JSON is invalid
+            data = {}; 
         }
 
         if (data.name) {
@@ -65,7 +65,7 @@ function submit() {
   
 }
 function submit1() {
-    window.location.href = "http://127.0.0.1:5500/thank.html";
+    alert("thank you for playing");
 }
 
 document.addEventListener("DOMContentLoaded", () => {
