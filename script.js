@@ -64,9 +64,6 @@ function submit() {
         
   
 }
-function submit1() {
-    alert("thank you for playing");
-}
 
 document.addEventListener("DOMContentLoaded", () => {
     const cards = document.querySelectorAll(".card");
